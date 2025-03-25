@@ -137,4 +137,4 @@ SOFTWARE.
 **Rishav Srivastava**
 
 - GitHub: [github.com/rishav-srivastava](https://github.com/rishav-srivastava)
-- Email: rishav@example.com
+- Email: srivastavarishavkumar@gmail.com
