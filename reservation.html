@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Reservation - Flavor Haven</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.svg" alt="Flavor Haven Logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="reservation.html" class="active">Reservation</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Make a Reservation</h1>
+            <p>Secure your table for an unforgettable dining experience at Flavor Haven</p>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation">
+        <div class="container">
+            <div class="section-header">
+                <h2>Reserve Your Table</h2>
+                <p>We look forward to hosting you at Flavor Haven. Please fill out the form below to make your reservation.</p>
+            </div>
+            <div class="form-container">
+                <form id="reservationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Select</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6 People</option>
+                                <option value="7+">7+ People</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="11:30">11:30 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="12:30">12:30 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="13:30">1:30 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="18:30">6:30 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="19:30">7:30 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="20:30">8:30 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="occasion">Special Occasion (Optional)</label>
+                        <select id="occasion" name="occasion">
+                            <option value="">Select (Optional)</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="anniversary">Anniversary</option>
+                            <option value="business">Business Dinner</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="requests">Special Requests (Optional)</label>
+                        <textarea id="requests" name="requests" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Reserve Now</button>
+                    </div>
+                </form>
+                <div class="form-success" id="reservationSuccess">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Reservation Request Submitted!</h3>
+                    <p>Thank you for your reservation request. We will confirm your booking shortly via email or phone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Policy Section -->
+    <section class="reservation-policy">
+        <div class="container">
+            <div class="section-header">
+                <h2>Reservation Policy</h2>
+            </div>
+            <div class="policy-container">
+                <div class="policy-item">
+                    <div class="policy-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Arrival Time</h3>
+                    <p>Please arrive on time for your reservation. We can only hold your table for 15 minutes past your reservation time.</p>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <h3>Cancellation</h3>
+                    <p>If you need to cancel, please do so at least 3 hours in advance by calling us directly at (555) 123-4567.</p>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Large Groups</h3>
+                    <p>For parties of 7 or more, please call us directly to arrange your reservation at (555) 123-4567.</p>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Payment Policy</h3>
+                    <p>No credit card is required to make a reservation. Payment is accepted at the end of your dining experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you accommodate dietary restrictions?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we are happy to accommodate dietary restrictions and allergies. Please mention your specific needs in the "Special Requests" field when making your reservation, or inform your server.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is there a dress code?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We suggest smart casual attire. While we don't enforce a strict dress code, we appreciate when our guests dress appropriately for a fine dining experience.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I make a same-day reservation?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can make same-day reservations based on availability. For the best chance of securing a table, we recommend booking in advance, especially for weekend dining.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you have private dining options?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer private dining rooms for special events. Please contact us directly at (555) 123-4567 or email us at events@flavorhaven.com to discuss your private dining needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Flavor Haven</h3>
+                    <p>123 Culinary Street</p>
+                    <p>Gastronomy City, GC 12345</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: info@flavorhaven.com</p>
+                </div>
+                <div class="footer-hours">
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Thursday: 11:00 AM - 9:00 PM</p>
+                    <p>Friday - Saturday: 11:00 AM - 10:00 PM</p>
+                    <p>Sunday: 11:00 AM - 8:00 PM</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Flavor Haven. All rights reserved. Created by Rishav Srivastava</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

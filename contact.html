@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Flavor Haven</title>
+    <meta name="description" content="Contact Flavor Haven to make a reservation, provide feedback, or inquire about private events and catering services.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/logo.svg" alt="Flavor Haven Logo">
+                        <span>Flavor Haven</span>
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Reach out for reservations, inquiries, or feedback</p>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p>123 Culinary Street</p>
+                    <p>Gourmet City, GC 12345</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>Reservations: (123) 456-7890</p>
+                    <p>Private Events: (123) 456-7891</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>info@flavorhaven.com</p>
+                    <p>events@flavorhaven.com</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h3>Hours</h3>
+                    <p>Monday - Thursday: 11:00 AM - 10:00 PM</p>
+                    <p>Friday - Saturday: 11:00 AM - 11:00 PM</p>
+                    <p>Sunday: 10:00 AM - 9:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <div class="container">
+            <h2 class="section-title">Send Us a Message</h2>
+            <div class="form-container">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="feedback">Provide Feedback</option>
+                            <option value="event">Private Event Inquiry</option>
+                            <option value="catering">Catering Services</option>
+                            <option value="question">General Question</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div id="formSuccess" class="form-success">
+                    <i class="fa-solid fa-check-circle"></i>
+                    <h3>Thank You!</h3>
+                    <p>Your message has been sent successfully. We'll get back to you shortly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Dine With Us?</h2>
+            <p>We've made it easier to secure your table with our online reservation system.</p>
+            <a href="reservation.html" class="btn btn-primary">Make a Reservation</a>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Find Us</h2>
+            <div class="map-container">
+                <!-- Replaced with a placeholder for now -->
+                <div class="map-placeholder">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <p>Interactive map would be displayed here</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you accept walk-ins?</h3>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we accept walk-ins based on availability. However, we recommend making a reservation, especially for weekend dining and larger groups.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you accommodate dietary restrictions?</h3>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We offer vegetarian, vegan, and gluten-free options. Please inform your server about any allergies or dietary requirements, and our chefs will be happy to accommodate you.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer private dining or catering?</h3>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer private dining experiences for special occasions and catering services for events. Please contact us at events@flavorhaven.com for more information and availability.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your cancellation policy?</h3>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We appreciate at least 24 hours' notice for cancellations. For parties of 6 or more, we require 48 hours' notice to avoid a cancellation fee.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Flavor Haven</h3>
+                    <p>123 Culinary Street</p>
+                    <p>Gourmet City, GC 12345</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: info@flavorhaven.com</p>
+                </div>
+                <div class="footer-hours">
+                    <h3>Hours</h3>
+                    <p>Monday - Thursday: 11:00 AM - 10:00 PM</p>
+                    <p>Friday - Saturday: 11:00 AM - 11:00 PM</p>
+                    <p>Sunday: 10:00 AM - 9:00 PM</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-yelp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Flavor Haven. All Rights Reserved. | Designed by Rishav Srivastava</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
